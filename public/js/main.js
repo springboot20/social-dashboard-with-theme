@@ -225,20 +225,25 @@ addEventListener('DOMContentLoaded', () => {
   if (!theme) {
     if (window.matchMedia(preferTheme(dark)).matches) {
       activateMode(dark);
+      localStorage.setItem('theme', dark);
     } else if (window.matchMedia(preferTheme(light)).matches) {
       activateMode(light);
+      localStorage.setItem('theme', light);
     } else {
       activateMode(defaultTheme);
+      localStorage.setItem('theme', defaultTheme);
     }
 
     window.matchMedia(preferTheme(dark)).addEventListener('change', (event) => {
       if (event.matches) {
         activateMode(dark);
+        localStorage.setItem('theme', dark);
       }
     });
     window.matchMedia(preferTheme(light)).addEventListener('change', (event) => {
       if (event.matches) {
         activateMode(light);
+        localStorage.setItem('theme', light);
       }
     });
   }
