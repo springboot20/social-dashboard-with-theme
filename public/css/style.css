@@ -119,7 +119,7 @@ nav .container {
 }
 
 .container header p {
-  font-size: 1.35rem;
+  font-size: 1.85rem;
   font-weight: 600;
   color: var(--dark-grayish-blue-text);
 }
@@ -176,6 +176,11 @@ nav .container {
 .mode input[type='checkbox']:checked::after {
   background: var(--very-dark-blue-text);
   left: calc(100% - 2.7rem);
+  -webkit-transition: transform 500ms ease-in 0.5s;
+  -moz-transition: transform 500ms ease-in 0.5s;
+  -ms-transition: transform 500ms ease-in 0.5s;
+  -o-transition: transform 500ms ease-in 0.5s;
+  transition: transform 500ms ease-in 0.5s;
 }
 
 .mode input[type='checkbox']:checked {
@@ -282,14 +287,14 @@ article.card .card-img p {
 article.card .card-description {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   gap: 1rem;
 }
 
 article.card .card-description h1 {
   color: var(--very-dark-blue-text);
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
 }
 
 .dark article.card .card-description h1 {
@@ -381,7 +386,7 @@ section#overviews header h1 {
 }
 
 #overviews .container article.card .page-viewed h1 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 900;
   color: var(--very-dark-blue-text);
 }
@@ -417,14 +422,8 @@ article.card .overview-percentage > img {
   gap: 7px;
 }
 
-.percentage img {
-  display: block;
-  height: 7px;
-  width: 7px;
-}
-
 .percentage p {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.25rem;
 }
 
