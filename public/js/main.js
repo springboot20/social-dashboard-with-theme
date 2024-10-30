@@ -45,7 +45,7 @@ const insertFollowerDom = (data) => {
 };
 
 const insertOverviewDom = (data) => {
-  const overviewsContainer = document.querySelector('#overviews .container');
+  const overviewsContainer = document.querySelector('#overviews .overview-container');
 
   const card = document.createElement('article');
   card.className = 'card';
